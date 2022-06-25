@@ -51,7 +51,7 @@ const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream
 
 async function startJimbruOffical() {
 
-console.log(color(figlet.textSync('Cheems Bot-MD', {
+console.log(color(figlet.textSync('Jimbru-MD', {
 
 		font: 'Pagga',
 
@@ -149,7 +149,7 @@ if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
 
 m = smsg(JimbruOffical, mek, store)
 
-require("./jimbru")(JimbruOffical, m, chatUpdate, store)
+require("./Jimbru")(JimbruOffical, m, chatUpdate, store)
 
 } catch (err) {
 
@@ -279,28 +279,28 @@ JimbruOffical.ev.on('group-participants.update', async (anu) => {
 
                 jimbrubody = `┌─❖
 
-│「 𝗛𝗶 👋 」
+│「 HEY 👋 」
 
 └┬❖ 「 @${jimbruName.split("@")[0]}  」
 
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   │❖ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
 
-   │✑  ${metadata.subject}
+   │❖ ${metadata.subject}
 
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │❖ 𝗠𝗲𝗺𝗯𝗲𝗿 : 
 
-   │✑ ${xmembers}th
+   │❖ ${xmembers}th
 
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   │❖  𝗝𝗼𝗶𝗻𝗲𝗱 : 
 
-   │✑ ${xtime} ${xdate}
+   │❖ ${xtime} ${xdate}
 
    └───────────────┈ ⳹`
 
 
 let buttons = [
 
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome'}, type: 1}
 
 ]
 
