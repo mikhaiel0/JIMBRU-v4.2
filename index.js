@@ -76,7 +76,7 @@ if (mek.key && mek.key.remoteJid === 'status@broadcast') return
 if (!JimbruOffical.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
 if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
 m = smsg(JimbruOffical, mek, store)
-require("./XeonCheems3")(JimbruOffical, m, chatUpdate, store)
+require("./Jimbru")(JimbruOffical, m, chatUpdate, store)
 } catch (err) {
 console.log(err)
 }
@@ -88,7 +88,7 @@ JimbruOffical.ev.on('groups.update', async pea => {
        try {
        ppgc = await JimbruOffical.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://telegra.ph/file/3983c55ac7f3ebea225d3.jpg'
+       ppgc = 'https://telegra.ph/file/ddaca390b13a4246bf1ef.jpg'
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
@@ -154,10 +154,10 @@ JimbruOffical.ev.on('group-participants.update', async (anu) => {
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./Media/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
@@ -198,10 +198,10 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'RIP'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./Media/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
@@ -220,7 +220,7 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+JimbruOffical.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 }
             }
         } catch (err) {
@@ -229,7 +229,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
     })
     
 // Setting
-    XeonBotInc.decodeJid = (jid) => {
+    JimbruOffical.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
             let decode = jidDecode(jid) || {}
@@ -237,16 +237,16 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         } else return jid
     }
     
-    XeonBotInc.ev.on('contacts.update', update => {
+    JimbruOffical.ev.on('contacts.update', update => {
         for (let contact of update) {
-            let id = XeonBotInc.decodeJid(contact.id)
+            let id = JimbruOffical.decodeJid(contact.id)
             if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
         }
     })
 
-    XeonBotInc.getName = (jid, withoutContact  = false) => {
-        id = XeonBotInc.decodeJid(jid)
-        withoutContact = XeonBotInc.withoutContact || withoutContact 
+    JimbruOffical.getName = (jid, withoutContact  = false) => {
+        id = JimbruOffical.decodeJid(jid)
+        withoutContact = JimbruOffical.withoutContact || withoutContact 
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
