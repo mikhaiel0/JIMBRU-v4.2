@@ -41,32 +41,32 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['ur number'] //ur owner number
-global.ownername = "ur name"
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.owner = ['919544846609'] //ur owner number
+global.ownername = "Mikhaiel"
+global.ytname = "YT: Mikhaiel" //ur yt chanel name
+global.socialm = "GitHub: Mikhaiel" //ur github or insta name
+global.location = "India, Kerala, Pathanamthitta" //ur location
 
 //bot bombdy
-global.botname = "ur bot name" //ur bot name
-global.websitex = "https://youtu.be/zpUd6tk1NNA" //ur website
-global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n🦄🦄🦄 "
-global.author = "🦄Dream Guy Xeon"
-global.themeemoji = "🐶"
-global.reactmoji = "😘"
-global.ownertag = ['ur number'] //ur owner tag
-global.ownernummenu = ['ur number'] //ur owner number in menu and all
-global.watermark = "Xeon Bot Inc." //ur watermark
-global.botscript = "https://github.com/DGXeon/CheemsBot-MD3"
-global.linkz1 = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS"
-global.linkz2 = "https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd"
+global.botname = "Jimbru-v4.2" //ur bot name
+global.websitex = "https://instagram.com/the_real_mikhaiel" //ur website
+global.vidmenu = { url: 'https://www.instagram.com/reel/CfMGePqj5KM/?igshid=YmMyMTA2M2Y=.mp4' } //gif and video menu
+global.packname = "Jimbru \n\n\n\n\n\n\n❤‍🩹"
+global.author = "Made By"
+global.themeemoji = "🧞"
+global.reactmoji = "🧞"
+global.ownertag = ['919544846609'] //ur owner tag
+global.ownernummenu = ['919544846609'] //ur owner number in menu and all
+global.watermark = "© Mikhaiel." //ur watermark
+global.botscript = "https://github.com/Mikhaiel/Jimbru-MD"
+global.linkz1 = "https://chat.whatsapp.com/"
+global.linkz2 = "https://chat.whatsapp.com/"
 
 //Bot theme media
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.thum = fs.readFileSync("./Media/theme/Jimbru.jpg") //ur thumb pic
+global.log0 = fs.readFileSync("./Media/theme/Jimbru.jpg") //ur logo pic
+global.err4r = fs.readFileSync("./Media/theme/Jimbru.jpg") //ur error pic
+global.thumb = fs.readFileSync("./Media/theme/Jimbru.jpg") //ur thumb pic
 
 //database
 global.ntilinkytvid = []
