@@ -123,7 +123,7 @@ global.limitawal = {
 }
 global.limitawal = {
     rakyat: "Infinity",
-    free: 100
+    free: 999999
 }
 // api website by xenz
 global.APIs = {
